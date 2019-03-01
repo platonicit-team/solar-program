@@ -1,0 +1,279 @@
+/*
+Version: 1.0.1
+Author: Mehedi Hasan
+Author URI: http://promehedi.com/
+*/
+/* ====================================================================
+[TABLE OF CONTENTS]
+-------------------
+01. Global CSS
+02. 
+*/
+/**
+* ===================================
+* = 01. Global CSS
+* ===================================
+*/
+body {
+    font-family: "Roboto", sans-serif;
+    color: #777;
+    font-size: 14px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+input:focus, textarea:focus, button:focus, a:focus {
+    outline: none;
+}
+
+button[type=submit], input[type=submit] {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+	margin: 0 0 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+input, textarea {
+    padding: 10px 15px;
+    margin-bottom: 1em;
+}
+
+input[type=text], input[type=email] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.15);
+    color: #545253;
+    font-size: 16px;
+    height: 44px;
+    margin: 0;
+    padding: 9px 19px;
+    transition: border-color .15s ease;
+    width: 100%;
+  }
+  
+  input[type=text]:focus, input[type=email]:focus {
+    background: #fff;
+    border-color: #8a8a8a;
+    box-shadow: none;
+  }
+  
+  input[type=text]+input[type=text], input+input[type=email] {
+    margin-top: 15px;
+  }
+
+.bg {
+    background-color: #ddd;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: all 0.3s;
+    border: 1px solid #f6931d;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 130px;
+    font: 700 14px/40px "Roboto", sans-serif;
+    background: #f6931d;
+}
+
+.button:hover {
+    background: #e0871d;
+    border-color: #e0871d;
+}
+
+
+
+
+.nav-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    color: #fff;
+    padding: 15px 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.75) 0%, rgba(125,185,232,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.75) 0%,rgba(125,185,232,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(125,185,232,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#007db9e8',GradientType=0 );
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu li a {
+    display: block;
+    color: inherit;
+    text-transform: capitalize;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.main-menu li:hover a {
+    color: #e0871d;
+}
+
+.main-menu li:last-child a {
+    padding-right: 0;
+}
+
+.banner-wrap {
+    height: 100vh;
+    background: #ddd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 3;
+    color: #fff;
+}
+
+.banner-wrap::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.banner-wrap div {
+    height: 100%;
+}
+
+.banner-wrap .row div {
+    height: auto;
+}
+
+.banner-wrap h3 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.quote-box {
+    background: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 70px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    font-size: 20px;
+    color: #333;
+}
+
+.quote-box p {
+    margin: 0;
+}
+
+.quote-box input {
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.footer-wrap {
+    position: absolute;
+    bottom: 0;
+    z-index: 9;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.footer-wrap p {
+    margin: 0;
+}
+
+.footer-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.footer-menu a {
+    display: block;
+    color: inherit;
+    margin: 0 15px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.footer-menu li:hover a {
+    color: #f6931d;
+}
+
+.footer-menu li:last-child a {
+    margin-right: 0;
+}
+
+.footer-menu li:before {
+    content: '/';
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-menu li:first-child:before {
+    display: none;
+}
