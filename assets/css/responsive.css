@@ -13,6 +13,13 @@ TABLET LAYOUT : 768px.
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     
+    .footer-wrap .text-right {
+        text-align: center!important;
+    }
+
+    .footer-menu li a {
+        margin-top: 6px;
+    }
 }
 
 /*=====================
@@ -20,6 +27,56 @@ SMALL MOBILE LAYOUT : 320px.
 =====================*/
 
 @media only screen and (max-width: 767px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    .slicknav_menu {
+        display: block;
+    }
+
+    .nav-wrap  {
+        display: none;
+    }
+
+    .banner-wrap h3 {
+        font-size: 24px;
+    }
+
+    .footer-wrap .text-right {
+        text-align: center!important;
+    }
+    
+    .footer-wrap {
+        font-size: 14px;
+    }
+    
+    .footer-menu li a {
+        margin: 6px 8px;
+        font-size: 85%;
+    }
+    
+    .footer-menu li:before {
+        left: -4px;
+    }
+    
+    .multi_step_form #msform fieldset h3 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    
+    .radio label {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    
+    .bills, .form-inner {
+        padding: 0;
+    }
+
+    .multi_step_form #msform {
+        min-height: 320px;
+    }
     
 }
 
